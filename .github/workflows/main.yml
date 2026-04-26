@@ -1,11 +1,43 @@
-name: main
+name: Android CI
 
 on:
-  workflow_dispatch:  # blank for now
+  push:
+    branches: [ "main" ]
+    paths:
+      - "app/**"
+      - "gradle/**"
+      - "build.gradle"
+      - "settings.gradle"
+      - "gradle.properties"
+      - "gradlew"
+      - "gradlew.bat"
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "app/**"
+      - "gradle/**"
+      - "build.gradle"
+      - "settings.gradle"
+      - "gradle.properties"
+      - "gradlew"
+      - "gradlew.bat"
 
 jobs:
-  placeholder:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Placeholder
-        run: echo ""
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Run unit tests
+        run: ./gradlew test
