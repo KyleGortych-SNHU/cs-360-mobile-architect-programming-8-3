@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project Three Kyle Gortych</string>
+
+    <!-- Login screen -->
+    <string name="title_welcome">Welcome</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="action_create_account">Create Account</string>
+    <string name="err_empty_fields">Username and password are required</string>
+    <string name="err_invalid_credentials">Invalid username or password</string>
+    <string name="err_user_exists">That username is already taken</string>
+    <string name="err_short_password">Password must be at least 4 characters</string>
+    <string name="create_account_success">Account created. Logging you in…</string>
+
+    <!-- Inventory screen -->
+    <string name="title_inventory">Inventory</string>
+    <string name="action_add_item">Add Item</string>
+    <string name="action_sms_settings">SMS Settings</string>
+    <string name="title_add_item">Add inventory item</string>
+    <string name="hint_item_name">Item name</string>
+    <string name="action_add">Add</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="err_empty_name">Please enter a name</string>
+    <string name="col_item">Item</string>
+    <string name="col_qty">Qty</string>
+    <string name="col_action">Action</string>
+    <!-- Placeholder shown in the layout preview only; replaced at bind time. -->
+    <string name="placeholder_item_name" translatable="false">Item Name</string>
+
+    <!-- SMS screen -->
+    <string name="title_sms">SMS notifications</string>
+    <string name="sms_info">
+        This app can send SMS notifications when an item\'s quantity drops to zero.
+        Enter the phone number to receive alerts and tap the button below.
+    </string>
+    <string name="hint_phone">Phone number (e.g. +15551234567)</string>
+    <string name="action_enable_sms">Save &amp; enable SMS notifications</string>
+    <string name="sms_status_granted">SMS permission: granted</string>
+    <string name="sms_status_not_granted">SMS permission: not granted</string>
+    <string name="sms_permission_granted">Permission granted. Alerts will be sent via SMS.</string>
+    <string name="sms_permission_denied">Permission denied. The app works without SMS alerts.</string>
+    <string name="sms_zero_stock">Inventory alert: %1$s is out of stock.</string>
+    <string name="sms_sent_for">Sent SMS alert for %1$s</string>
+</resources>
