@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * Instrumented tests for the Room database. These run on a device or
  * emulator (Build &gt; Run &gt; select device) rather than on the JVM,
- * because Room generates code that depends on the Android SQLite bindings.
+ * because  Room generates code that depends on the Android SQLite bindings.
  *
  * <p>Each test uses an in-memory database that is destroyed in
  * {@link #closeDb()}, so tests cannot interfere with each other or with
